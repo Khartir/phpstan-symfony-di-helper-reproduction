@@ -1,0 +1,13 @@
+includes:
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/phpstan/phpstan-symfony/rules.neon
+    - vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: max
+    symfony:
+        container_xml_path: %rootDir%/../../../var/cache/dev/App_KernelDevDebugContainer.xml
+    paths:
+          - config/
+#    scanFiles:
+#        - vendor/symfony/dependency-injection/Loader/Configurator/ContainerConfigurator.php
